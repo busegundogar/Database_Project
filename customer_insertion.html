@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #04AA6D;
+                    color: white;
+                }
+	.tab {
+            tab-size: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="welcome.html">Welcome</a>
+        <a class="active"
+           href="customer_insertion.html">Insertion</a>
+        <a href="customer_deletion.html">Deletion</a>
+        <a href="filter_age.html">Filter</a>
+        <a href="get_customers.php">All Users</a>
+    </div>
+
+    <div style="padding-left:16px">
+        <h2>A new costumer</h2>
+        <p>Please enter the neccessity features of the costumer in order to add as a new costumer.</p>
+    </div>
+
+
+
+
+    <form action="insert_customer.php" method="POST">
+        &emsp;Costumer Username:<br />
+        &emsp;<input type="text" id="username" name="username">
+        <br /><br />
+        &emsp;Costumer E-mail:<br />
+        &emsp;<input type="text" id="cmail" name="cmail">
+        <br /><br />
+        &emsp;Customer Password:<br />
+        &emsp;<input type="text" id="cpass" name="cpass">
+        <br /><br />
+        &emsp;Phone Number:<br />
+        &emsp;<input type="text" id="cphone" name="cphone">
+        <br /><br />
+        &emsp;Address:<br />
+        &emsp;<input type="text" id="caddress" name="caddress">
+        <br /><br />
+        &emsp;Age:<br />
+        &emsp;<input type="text" id="age" name="age">
+        <br /><br />
+        &emsp;<input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+

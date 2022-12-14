@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #04AA6D;
+                    color: white;
+                }
+	.tab {
+            tab-size: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="welcome.html">Welcome</a>
+        <a class="active"
+           href="customer_insertion.html">Insertion</a>
+        <a href="customer_deletion.html">Deletion</a>
+        <a href="filter_age.html">Filter</a>
+        <a href="get_customers.php">All Users</a>
+    </div>
+
+    <div style="padding-left:16px">
+        <h2>A new order</h2>
+        <p>Info yaz istersen</p>
+    </div>
+
+
+
+    <form action="insert_order.php" method="POST">
+        &emsp;Order Status:<br />
+        &emsp;<input type="text" id="ostatus" name="ostatus">
+        <br /><br />
+        &emsp;Cargo address:<br />
+        &emsp;<input type="text" id="cargo_address" name="cargo_address">
+        <br /><br />
+        &emsp;Invoice info:<br />
+        &emsp;<input type="text" id="invoice_info" name="invoice_info">
+        <br /><br />
+
+        &emsp;<input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
