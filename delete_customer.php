@@ -1,11 +1,15 @@
 <?php
 	include "config.php";
-	if(!empty($_POST['ids']))
+	if(!empty($_GET['cid']))
 	{
-		$cid = $_POST['ids'];
+		$cid = $_GET['cid'];
 		$sql_statement =
 		"DELETE FROM customer WHERE cid = $cid";
 		$result = mysqli_query($db, $sql_statement);
-		echo "Your result is " . $result;
+
+		if($result){
+			header("refresh: 0; url = customer_admin.php");
+			exit;
+        }
 	}
 ?>
